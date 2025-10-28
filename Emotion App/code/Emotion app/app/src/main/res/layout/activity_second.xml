@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="sans-serif-black"
+        android:text="How are we feeling today?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="4dp"
+        android:text="Time stamps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/crying"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Crying"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sad"
+        app:srcCompat="@drawable/crying" />
+
+    <ImageButton
+        android:id="@+id/calm"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Calm"
+        app:layout_constraintEnd_toStartOf="@+id/sad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/calm" />
+
+    <ImageButton
+        android:id="@+id/sad"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Sad"
+        app:layout_constraintEnd_toStartOf="@+id/crying"
+        app:layout_constraintStart_toEndOf="@+id/calm"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/confused"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Confused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inlove"
+        app:srcCompat="@drawable/confused" />
+
+    <ImageButton
+        android:id="@+id/hapiness"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/Happy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/angry"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/hapiness" />
+
+    <Button
+        android:id="@+id/Angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="48dp"
+        android:text="Angry"
+        app:layout_constraintBottom_toTopOf="@+id/calm"
+        app:layout_constraintEnd_toStartOf="@+id/Happy"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/calm"
+        app:layout_constraintTop_toBottomOf="@+id/angry" />
+
+    <Button
+        android:id="@+id/Happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="Happy"
+        app:layout_constraintBottom_toTopOf="@+id/crying"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hapiness" />
+
+    <ImageButton
+        android:id="@+id/angry"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Angry"
+        app:layout_constraintEnd_toStartOf="@+id/hapiness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/angry" />
+
+    <ImageButton
+        android:id="@+id/inlove"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/InLove"
+        app:layout_constraintEnd_toStartOf="@+id/confused"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/inlove" />
+
+    <Button
+        android:id="@+id/Calm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="1dp"
+        android:text="Calm"
+        app:layout_constraintBottom_toTopOf="@+id/inlove"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="1dp"
+        android:text="Sad"
+        app:layout_constraintBottom_toTopOf="@+id/confused"
+        app:layout_constraintEnd_toStartOf="@+id/Crying"
+        app:layout_constraintStart_toEndOf="@+id/Calm" />
+
+    <Button
+        android:id="@+id/Crying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="1dp"
+        android:text="Crying"
+        app:layout_constraintBottom_toTopOf="@+id/confused"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/InLove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="In-Love"
+        app:layout_constraintBottom_toTopOf="@+id/timestamp"
+        app:layout_constraintEnd_toStartOf="@+id/Confused"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Confused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="12dp"
+        android:text="Confused"
+        app:layout_constraintBottom_toTopOf="@+id/timestamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/InLove" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
